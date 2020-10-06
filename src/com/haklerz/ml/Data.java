@@ -13,10 +13,6 @@ public class Data {
         return values[index];
     }
 
-    public double get() {
-        return get(0);
-    }
-
     public int size() {
         return values.length;
     }
