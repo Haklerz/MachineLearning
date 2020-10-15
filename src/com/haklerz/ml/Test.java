@@ -1,6 +1,6 @@
 package com.haklerz.ml;
 
-public class TensorTest {
+public class Test {
     public static void main(String[] args) {
         Tensor X = Tensor.normal(3, 3);
 
@@ -10,11 +10,14 @@ public class TensorTest {
             System.out.println();
         }
 
-        Model model = new Model(64 * 64)
-            .addDense(1000, Activation.RELU)
-            .addDense(400, Activation.RELU)
-            .addDense(1000, Activation.RELU)
-            .addDense(64 * 64, Activation.SIGMOID);
+        /*
+        Model model = new Model()
+            .add(Input(64 * 64))
+            .add(Dense(1000, Activation.RELU))
+            .add(Dense(400, Activation.RELU))
+            .add(Dense(1000, Activation.RELU))
+            .add(Dense(64 * 64, Activation.SIGMOID));
+        */
 
     }
 }

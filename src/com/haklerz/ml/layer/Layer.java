@@ -2,17 +2,8 @@ package com.haklerz.ml.layer;
 
 import com.haklerz.ml.Tensor;
 
-public abstract class Layer {
+public interface Layer {
 
-    private final int layerSize;
+    public Tensor forward(Tensor input);
 
-    public Layer(int layerSize) {
-        this.layerSize = layerSize;
-	}
-
-	public abstract Tensor forward(Tensor input);
-
-    public int size() {
-        return layerSize;
-    }
 }
