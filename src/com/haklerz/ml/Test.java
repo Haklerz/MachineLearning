@@ -10,14 +10,13 @@ public class Test {
             System.out.println();
         }
 
+
         /*
-        Model model = new Model()
-            .add(Input(64 * 64))
-            .add(Dense(1000, Activation.RELU))
-            .add(Dense(400, Activation.RELU))
-            .add(Dense(1000, Activation.RELU))
-            .add(Dense(64 * 64, Activation.SIGMOID));
-        */
+         * Model model = new Input(24 * 24)
+         *      .add(new Dense(16, Activation.RELU))
+         *      .add(new Dense(16, Activation.RELU))
+         *      .add(new Dense(10, Activation.ARGMAX));
+         */
 
     }
 }
